@@ -1,3 +1,6 @@
+<pre>{{ coinGroups$ | async | json }}</pre>
+<hr>
+<button (click)="add()">+</button>
 <div *ngFor="let group of coinGroupList">
   <div *ngFor="let coin of group.coins">
     {{ coin.name }}
